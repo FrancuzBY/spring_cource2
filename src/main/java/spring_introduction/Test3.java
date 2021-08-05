@@ -9,6 +9,10 @@ public class Test3 {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
         Person person = context.getBean("myPerson", Person.class);
+
+
+
+
         person.callYourPet();
         person.getSurname();
         person.getAge();
