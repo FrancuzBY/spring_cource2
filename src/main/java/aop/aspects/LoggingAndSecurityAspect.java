@@ -18,5 +18,4 @@ public class LoggingAndSecurityAspect {
         System.out.println("beforeGetSecurityAdvice: Сhecking the rights to recieve the book/magazine.");
     }
 
-
 }
