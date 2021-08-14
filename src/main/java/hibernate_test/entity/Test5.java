@@ -14,10 +14,11 @@ public class Test5 {
         try (Session session = factory.openSession()) {
             session.beginTransaction();
 
-//            Employee emp = session.get(Employee.class, 1);
-//            emp.setSalary(1500);
+//            Employee emp = session.get(Employee.class, 6);
+//            session.delete(emp);
 
-//            session.createQuery("update Employee set salary = 1000 WHERE name='Alexandr'").executeUpdate();
+            session.createQuery("delete from Employee where Name = 'Alexandr'").executeUpdate();
+
 
             session.getTransaction().commit();
             System.out.println("DONE!");
